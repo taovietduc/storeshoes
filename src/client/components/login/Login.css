@@ -1,0 +1,233 @@
+.login-container {
+  width: 350px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+}
+
+.login-container h2 {
+  color: #fff9f9;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f0a500;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #cc8500;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  color: #333;
+}
+
+.remember-forgot input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.social-login {
+  margin-top: 20px;
+  color: #333;
+}
+
+.social-login a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  width: calc(50% - 10px);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Facebook button */
+.social-login a.facebook {
+  background: linear-gradient( #3B5998, #4267b2, #365899);
+}
+
+.social-login a.facebook:hover {
+  background: linear-gradient( #3B5998, #4267b2, #365899);
+}
+
+/* Instagram button */
+.social-login a.instagram {
+  background: linear-gradient( #E95950, #FCCC63, #FBAD50, #CD486B);
+}
+
+.social-login a.instagram:hover {
+  background: linear-gradient( #E95950, #FCCC63, #FBAD50, #CD486B);
+}
+
+/* TikTok button */
+.social-login a.tiktok {
+  background: #000000;
+}
+
+.social-login a.tiktok:hover {
+  background: #000000;
+}
+
+.social-login a:hover {
+  transform: translateY(-3px);
+}
+
+.social-login a:active {
+  transform: translateY(1px);
+}
+
+
+.closeBtn button {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  color: red;
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  
+}
+
+.closeBtn button:hover {
+  color: darkred;
+}
+
+
+
+
+.ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Styling the rings */
+.ring i {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid;
+  transition: 0.5s;
+}
+
+/* Different sizes, colors, and delays for effect */
+.ring i:nth-child(1) {
+  --clr: #033d20; /* Red */
+  border-color: var(--clr);
+  border-radius: 38% 62% 63% 37% / 41% 44% 56%;
+  animation: borderMorph 6s linear infinite, rotate 6s linear infinite;
+}
+
+.ring i:nth-child(2) {
+  --clr: #f87a04; /* Green */
+  border-color: var(--clr);
+  border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+  animation: borderMorph 4s linear infinite, rotate 4s linear infinite reverse;
+}
+
+.ring i:nth-child(3) {
+  --clr: #fffb05; /* Blue */
+  border-color: var(--clr);
+  border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+  animation: borderMorph 10s linear infinite, rotate 10s linear infinite;
+}
+
+.ring i:nth-child(4) {
+  --clr: #ffffff; /* Blue */
+  border-color: var(--clr);
+  border-radius: 41% 44% 56% 59% / 68% 62% 63% 37%;
+  animation: borderMorph 10s linear infinite, rotate 10s linear infinite;
+}
+
+
+/* Hover effect */
+.ring:hover i {
+  border: 4px solid var(--clr);
+  filter: drop-shadow(0 0 20px var(--clr));
+  --clr: #ffff00; /* Change to yellow or any other color you prefer */
+  border-color: var(--clr);
+}
+
+/* Change color on hover for individual rings */
+
+
+/* Keyframes for border morphing */
+@keyframes borderMorph {
+  0%, 100% {
+    border-radius: 38% 62% 63% 37% / 41% 44% 56%;
+  }
+  50% {
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  }
+}
+
+/* Keyframes for rotation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

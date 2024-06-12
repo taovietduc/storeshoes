@@ -1,0 +1,39 @@
+.topbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    color: #fff;
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: -170px;
+    gap: 750px;
+    z-index: 1000;
+}
+
+.topbar-left {
+    display: flex;
+    align-items: center;
+    margin-right: 175px;
+    margin-left: 140px;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: 175px;
+    margin-left: 140px;
+}
+
+.topbar-right button {
+    background-color: #00000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.divider-topbar {
+    margin: 0 10px;
+}

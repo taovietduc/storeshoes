@@ -1,0 +1,87 @@
+.footer {
+    position: relative;
+    width: 100%;
+
+}
+
+.footer-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    background: url('https://ananas.vn/wp-content/uploads/Web1500-1.jpeg') no-repeat center center / cover;  
+}
+
+.footer-email .footer-background-email {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 25vh; ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.footer-email .footer-content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.footer-email .footer-input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.footer-email input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-email button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #f10f0f;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-information {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-license {
+    background-color: #000;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #fff;
+    font-size: 14px;
+    color: #fff;
+}
+
+.highlight {
+    color: red;
+}

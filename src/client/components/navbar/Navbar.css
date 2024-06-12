@@ -1,0 +1,96 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 100px;
+    border-bottom: 1px solid #000000;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 40px;
+    z-index: 500;
+    margin: 0;
+}
+
+.navbar-logo {
+    position: relative;
+    margin-left: 120px;
+}
+
+.navbar-logo button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.navbar-logo img {
+    height: 150px;
+    display: block;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 0px;
+    gap: 30px;
+    position: relative;
+}
+
+.navbar-menu button {
+    position: relative;
+    margin: 0 10px;
+    font-size: 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-menu button::after {
+    content: '';
+    position: absolute;
+    inset: 40% -60% 0 -60%;
+    opacity: 0.3;
+    pointer-events: none;
+    transition: background-color 0.3s ease;
+}
+
+
+.divider {
+    color: #ccc;
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 210px;
+}
+
+.navbar-search input {
+    border: none;
+    outline: none;
+    padding-left: 0px;
+    font-size: 20px;
+}
+
+.search-icon {
+    width: 16px;
+    height: 16px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0b/Search_Icon.svg');
+    background-size: cover;
+    margin-left: 5px;
+}
+
+.underline {
+    position: absolute;
+    height: 3px;
+    background-color: black;
+    bottom: -5px;
+    transition: all 0.3s ease;
+}

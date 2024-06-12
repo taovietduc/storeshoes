@@ -1,0 +1,32 @@
+.product-page {
+    display: flex;
+    flex-direction: row; /* Default direction places SidebarPro on the left and product-list on the right */
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    flex: 1; /* This will take the remaining space */
+    padding: 20px; /* Add some padding if necessary */
+}
+
+.product-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    text-align: center;
+}
+
+.product-price {
+    color: red;
+    font-weight: bold;
+}

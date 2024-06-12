@@ -1,0 +1,87 @@
+.overview {
+    margin-top: 180px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.image-grid img {
+    width: 32%;
+    border-radius: 5px;
+}
+
+.advertisement {
+    background-color: #FF4500;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advertisement button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f0a500;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+
+
+.overview-section {
+    width: 100%;
+    
+}
+
+.overview-category {
+    margin-bottom: 20px;
+}
+
+.overview-category h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.overview-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview-card {
+    width: 24%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.overview-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.overview-card .price {
+    color: red;
+    font-weight: bold;
+}
+
+.overview-card .old-price {
+    text-decoration: line-through;
+    color: grey;
+}
